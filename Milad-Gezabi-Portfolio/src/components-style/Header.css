@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-box {
+    font-family: 'Fasthand', cursive;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+}
+
+nav ul li {
+    margin: 0rem 1rem;
+}
+
+a {
+    text-decoration: none;
+}
