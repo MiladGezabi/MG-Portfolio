@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "../components-style/Header.css";
 import Nav from "../sub-components/Nav";
 import BurgerNav from "../sub-components/BurgerNav";
