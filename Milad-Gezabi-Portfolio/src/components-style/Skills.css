@@ -1,0 +1,33 @@
+
+.skills {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-heading {
+    text-align: center;
+    margin: 1rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.skill-box {
+    text-align: center;
+    padding: 1rem;
+}
+
+.skill-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skill-box span {
+    display: block;
+    color: white;
+    font-size: 2rem;
+}

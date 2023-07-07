@@ -34,18 +34,15 @@ h2 {
   white-space: nowrap;
   color: #0aff9d;
   text-decoration: underline;
-  animation: loading 8s linear infinite;
+  animation: loading 5s linear;
 }
 
 @keyframes loading {
   0% {
       max-width: 0;
   }
-  50% {
-      max-width: 7em;
-  }
   100% {
-      max-width: 0;
+      max-width: 7em;
   }
 }
 
