@@ -6,6 +6,9 @@ import nodejsLogo from '../assets/skill-logo/nodejs.png';
 import reactLogo from '../assets/skill-logo/react.png';
 import gitLogo from '../assets/skill-logo/git.png';
 import agileLogo from '../assets/skill-logo/agile.png';
+import figmaLogo from '../assets/skill-logo/figma.svg';
+import lowLogo from '../assets/skill-logo/database.png';
+
 
 export const skills = [
     {
@@ -34,7 +37,7 @@ export const skills = [
     },
     {
         "skill": "lowDB",
-        "logo": ""
+        "logo": lowLogo
     },
     {
         "skill": "Git",
@@ -43,5 +46,9 @@ export const skills = [
     {
         "skill": "Agile work",
         "logo": agileLogo
+    },
+    {
+        "skill": "Figma",
+        "logo": figmaLogo
     }
 ]
