@@ -1,0 +1,47 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem;
+    text-align: center;
+}
+
+.contact h2 {
+    margin: 2rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    font-size: 1.5rem;
+}
+
+.contact form button {
+    width: 7rem;
+    margin: 0.5rem auto;
+}
+
+/* ----------------- sent notification */
+
+.notis {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+    border: 2px solid #0aff9d;
+    border-radius: 0.2rem;
+    font-size: 2rem;
+    color: #0aff9d;
+    padding: 0.5rem 3rem;
+    background-color: black;
+    display: none;
+}
+
+.notison {
+    display: unset;
+}

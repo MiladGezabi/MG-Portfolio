@@ -1,7 +1,6 @@
 
 
 section {
-  background-color: rgb(25, 23, 23);
   display: flex;
   justify-content: space-between;
 }
