@@ -8,7 +8,8 @@ import gitLogo from '../assets/skill-logo/git.png';
 import agileLogo from '../assets/skill-logo/agile.png';
 import figmaLogo from '../assets/skill-logo/figma.svg';
 import lowLogo from '../assets/skill-logo/database.png';
-import pokemon from '../assets/projects-pics/pokemon.png'
+import pokemon from '../assets/projects-pics/pokemon.png';
+import ab from '../assets/projects-pics/americanburgers.png'
 
 export const projects = [
     {
@@ -20,4 +21,13 @@ export const projects = [
       "githubLink": "https://github.com/MiladGezabi/pokemonteam",
       "made with": [htmlLogo, cssLogo, jsLogo]
     },
+    {
+      "picture": ab,
+      "name": "American Burgers",
+      "description": "En påhittat resturangs hemsida som innehåller homepage, menysida och beställningar. Man kan beställa maträtter och dryck, man kan även logga in som admin och lägga till nya maträtter och dryck. test konto: username = Admin, Password = mums",
+      "descriptionEN": "A made-up restaurant's website that contains homepage, menu page and orders. You can order dishes and drinks, you can also log in as admin and add new dishes and drinks. test account: username = Admin, Password = mums",
+      "siteLink": "https://wiry-shop.surge.sh/",
+      "githubLink": "https://github.com/NorthPew/Bionic-Gardeners/tree/main",
+      "made with": [reactLogo, cssLogo, jsLogo]
+    }
 ]
