@@ -6,24 +6,24 @@ import BurgerNav from "../sub-components/BurgerNav";
 
 function Header() {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
-  const [menu_class, setMenuClass] = useState("menu hidden");
+  const [menu_class, setMenuClass] = useState("hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger-bar clicked");
-      setMenuClass("menu visible");
+      setMenuClass("visible");
     } else {
       setBurgerClass("burger-bar unclicked");
-      setMenuClass("menu hidden");
+      setMenuClass("hidden");
     }
     setIsMenuClicked(!isMenuClicked);
   };
 
   return (
-    <section className="header">
+    <section id="home" className="header">
       <div className="name-box">
-        <a href="">
+        <a href="#header">
           <h1>Milad Gezabi</h1>
         </a>
       </div>
@@ -37,7 +37,7 @@ function Header() {
           </div>
         
 
-        <div className={menu_class}>
+        <div className={`menu ${menu_class}`}>
             <BurgerNav />
         </div>
       

@@ -25,26 +25,34 @@ function Contact () {
       });
   };
 
+
   return (
-    <section className='contact'>
+    <section id='contact' className='contact'>
 
       <h2>Kontakt</h2>
 
       <form ref={form} onSubmit={sendEmail}>
-      <TextField 
+      <TextField
       required
       id="filled-basic" 
       label="Namn" 
       variant="filled" 
       margin='normal'
-      name='user_name' />
+      name='user_name'
+      color='secondary'
+      sx={{ background: "#EEEEFF" }}
+      />
 
-      <TextField id="filled-basic" 
+      <TextField 
+      id="filled-basic" 
       required
       label="E-mail" 
       variant="filled" 
       margin='normal'
-      name='user_email' />
+      name='user_email'
+      color='secondary'
+      sx={{ background: "#EEEEFF" }}
+      />
 
       <TextField
           required
@@ -55,6 +63,8 @@ function Contact () {
           variant="filled"
           margin='normal'
           name='message'
+          color='secondary'
+          sx={{ background: "#EEEEFF" }}
         />
       
       <Button type='submit' variant="contained" endIcon={<SendIcon />}>

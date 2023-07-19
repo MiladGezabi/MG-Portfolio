@@ -17,12 +17,10 @@ h2 {
   font-weight: 400;
   font-size: 7.8vw;
   line-height: 1.1;
-  color: #ffffff;
 }
 
 .loading {
   position: relative;
-  color: rgb(255, 255, 255);
 }
 
 .loading:before {
@@ -103,15 +101,23 @@ h2 {
   
   .theme--dark {
     background: var(--dark);
+    color: var(--darktext);
+  }
+
+  .darklink, .darklink:visited {
+    color: #A78295;
   }
   
   :root {
-    --dark: #0E273C;
-    --light: #efefef;
+    --dark: #331D2C;
+    --darktext: #EFE1D1;
+    --light: #FBFFDC;
+    --lighttext: #210808;
   }
   
   body {
     background: var(--light);
-    transition: background-color .2s ease-in-out;
+    color: var(--lighttext);
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
   }
 

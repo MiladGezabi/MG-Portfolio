@@ -9,7 +9,7 @@
 /* logo */
 
 .name-box {
-  background: linear-gradient(270deg, #393646, #4f4557, #6d5d6e);
+  background: linear-gradient(270deg, #f3f6de, #FBFFDC, #f5facd);
   background-size: 200% 200%;
   -webkit-animation: AnimationName 6s ease infinite;
   -moz-animation: AnimationName 6s ease infinite;
@@ -20,9 +20,12 @@
   padding: 0 0.8rem;
 }
 
+.darklogo {
+  background: linear-gradient(270deg, #2d1b28, #331D2C, #311a2a);
+}
+
 h1 {
   font-family: "Fasthand", cursive;
-  color: white;
   font-size: 2.5rem;
 }
 
@@ -134,9 +137,9 @@ nav ul li {
   margin: 0rem 1.5rem;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
-  color: white;
+  color: #381313;
 }
 
 /* hamburger menu */
@@ -155,11 +158,13 @@ a {
 .burger-bar {
   width: 4em;
   height: 0.5em;
-  background-color: white;
+  background-color: #0aff9d;
   border-radius: 0.5em;
 }
 
+
 .menu {
+  backdrop-filter: blur(20px);
   width: 100%;
   height: 50%;
   position: absolute;
@@ -168,6 +173,7 @@ a {
   animation: menuAnimation 0.2s ease-in-out;
   opacity: 0;
 }
+
 
 .hidden {
   display: none;
@@ -218,6 +224,7 @@ a {
     display: unset;
     width: 100%;
     text-align: center;
+    background-color: #FBFFDC;
   }
 
   .burger-nav ul {
@@ -230,11 +237,12 @@ a {
     width: 100%;
     height: 100%;
     font-size: 3rem;
-    color: white;
   }
 
   .visible {
     display: unset;
-    opacity: 0.8;
+    opacity: 0.9;
   }
+
+  
 }

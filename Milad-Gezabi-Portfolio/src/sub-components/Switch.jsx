@@ -7,6 +7,14 @@ function Switch() {
       "dark-mode-toggle__icon--moon"
     );
     document.body.classList.toggle("theme--dark");
+
+    const anchorTags = document.querySelectorAll("a");
+    anchorTags.forEach((anchorTag) => {
+      anchorTag.classList.toggle("darklink");
+    });
+
+    const logo = document.querySelector(".name-box")
+    logo.classList.toggle("darklogo")
   };
 
   return (
