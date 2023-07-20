@@ -1,6 +1,6 @@
 
 
-section {
+.hero {
   display: flex;
   justify-content: space-between;
 }

@@ -19,7 +19,7 @@ function Hero() {
     
 
   return (
-    <section>
+    <section className="hero">
       <motion.div ref={ref} className="intro-box"
       variants={{
         hidden: {opacity: 0, y: 75},
