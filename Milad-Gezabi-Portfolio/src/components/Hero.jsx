@@ -1,9 +1,13 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation} from "framer-motion";
+import { useRecoilState } from "recoil";
+import { LangState } from "./Atoms";
 import "../components-style/Hero.css";
 import Switch from "../sub-components/Switch.jsx";
 
 function Hero() {
+  const [toggleLang, setToggleLang] = useRecoilState(LangState)
+
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
@@ -14,6 +18,14 @@ function Hero() {
       mainControls.start("visible")
     }
   }, [isInView])
+
+  const ToggleLang =()=> {
+    if(toggleLang === "SV"){
+      setToggleLang("EN")
+    } else {
+      setToggleLang("SV")
+    }
+  }
 
  
     
@@ -37,6 +49,10 @@ function Hero() {
       </motion.div>
 
       <div className="switch-box">
+
+        <h4 onClick={()=> ToggleLang()}>
+          {toggleLang}
+        </h4>
 
        <Switch />
 
