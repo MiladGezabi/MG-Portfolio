@@ -28,6 +28,7 @@
   
   .p-image {
     max-width: 40%;
+    border-radius: 1rem;
   }
   
   .project-text {
