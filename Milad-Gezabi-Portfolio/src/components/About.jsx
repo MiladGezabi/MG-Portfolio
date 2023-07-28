@@ -1,24 +1,31 @@
-import '../components-style/About.css'
+import "../components-style/About.css";
+import { useRecoilState } from "recoil";
+import { LangState } from "./Atoms.js";
 
-function About () {
+function About() {
+  const [toggleLang, setToggleLang] = useRecoilState(LangState);
 
-    return (
-        <section id='about' className="about">
-            
-            <h2>
-                About me
-            </h2>
+  return (
+    <section id="about" className="about">
+      {toggleLang === "EN" ? (
+        <>
+          <h2>About me</h2>
 
-            <div className='image-box'>
+          <div className="image-box"></div>
 
-            </div>
+          <div className="text-box"></div>
+        </>
+      ) : (
+        <>
+          <h2>Om mig</h2>
 
-            <div className='text-box'>
+          <div className="image-box"></div>
 
-            </div>
-
-        </section>
-    )
+          <div className="text-box"></div>
+        </>
+      )}
+    </section>
+  );
 }
 
-export default About
+export default About;

@@ -5,7 +5,7 @@ import { projects } from "../sub-components/projects.js";
 
 function Projects() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const isInView = useInView(ref, { once: true})
 
   const mainControls = useAnimation()
 
@@ -33,7 +33,7 @@ function Projects() {
           }}
           initial="hidden"
           animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.25}}
+          transition={{ duration: 0.5}}
           >
             <img className="p-image" src={project.picture} alt={project.name} />
             <div className="project-text">
