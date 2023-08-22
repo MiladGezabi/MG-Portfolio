@@ -13,7 +13,9 @@ function About() {
 
           <div className="image-box"></div>
 
-          <div className="text-box"></div>
+          <div className="text-box">
+            Hello! My name is Milad Gezabi. I am UX/UI designer and Front-end web developer from Karlstad, Sweden. I´m passionate about learning new technologies and perfecting the ones i know.
+          </div>
         </>
       ) : (
         <>
@@ -21,7 +23,9 @@ function About() {
 
           <div className="image-box"></div>
 
-          <div className="text-box"></div>
+          <div className="text-box">
+          Hej! Jag heter Milad Gezabi. Jag är UX/UI-designer och Front-end webbutvecklare från Karlstad, Sverige. Jag brinner för att lära mig nya tekniker och att förbättra de jag redan känner.
+          </div>
         </>
       )}
     </section>
