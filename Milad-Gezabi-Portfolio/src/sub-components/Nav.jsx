@@ -13,7 +13,7 @@ function Nav () {
 
     return (
         <nav>
-        <ul>
+        <ul className='header-nav'>
           <li>
             <a href="#home"> {getLinkText(toggleLang)[0]} </a>
           </li>

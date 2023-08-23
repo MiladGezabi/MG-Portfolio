@@ -78,12 +78,15 @@ h1 {
 
 /* links */
 
+.header-nav li {
+  display: inline-block;
+  width: 6rem;
+}
+
 li {
   position: relative;
   margin: 0 auto;
   line-height: 3em;
-  display: inline-block;
-  width: 6rem;
   text-align: center;
 }
 li:before,
