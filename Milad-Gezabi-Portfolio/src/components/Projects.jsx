@@ -16,7 +16,15 @@ function Projects() {
   }, [isInView])
    
   return (
-    <section id="projects" className="projects">
+    <motion.section ref={ref} id="projects" className="projects"
+    variants={{
+      hidden: {opacity: 0, y: 75},
+      visible: {opacity: 1, y: 0}
+    }}
+    initial="hidden"
+    animate={mainControls}
+    transition={{ duration: 0.5}}
+    >
       <h2> Projects </h2>
       <p>
         {" "}
@@ -26,14 +34,7 @@ function Projects() {
 
       <div className="projects-container">
         {projects.map((project) => (
-          <motion.div ref={ref} className="project-box" key={project.name}
-          variants={{
-            hidden: {opacity: 0, y: 75},
-            visible: {opacity: 1, y: 0}
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.5}}
+          <div className="project-box" key={project.name}
           >
             <img className="p-image" src={project.picture} alt={project.name} />
             <div className="project-text">
@@ -53,10 +54,10 @@ function Projects() {
               ))}
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

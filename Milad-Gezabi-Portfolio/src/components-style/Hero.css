@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin: 5rem 0;
 }
 
 .intro-box {
@@ -18,6 +19,7 @@
   font-weight: 400;
   font-size: 7.8vw;
   line-height: 1.1;
+  margin-left: 3rem;
 }
 
 .loading {
@@ -136,16 +138,17 @@
   }
 
 
-  @media (max-width: 700px) {
+  @media screen and (max-width: 700px) {
 
     .hero {
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
     }
 
     .hero h2 {
       font-size: 5.5rem;
+      margin-left: 0;
     }
 
     .switch-box {
@@ -158,4 +161,11 @@
       margin: 1rem;
     }
 
+  }
+
+  @media screen and (max-width: 450px) {
+    .hero {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
   }

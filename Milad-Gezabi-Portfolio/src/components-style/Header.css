@@ -170,13 +170,14 @@ a, a:visited {
 
 
 .menu {
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(70px);
   width: 100%;
   height: 50%;
   position: absolute;
   top: 5.5rem;
   z-index: 1;
   animation: menuAnimation 0.2s ease-in-out;
+  border-bottom: 1px solid black;
   opacity: 0;
 }
 

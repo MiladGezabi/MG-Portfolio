@@ -3,11 +3,13 @@
     padding: 3rem;
     display: flex;
     flex-direction: column;
+    margin: 5rem 0;
 }
 
 .skill-heading {
     text-align: center;
     margin: 1rem;
+    font-size: 5rem;
 }
 
 .skills-container {
@@ -28,5 +30,32 @@
 
 .skill-box span {
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .skill-heading {
+        font-size: 4rem;
+    }
+
+    .skill-box img {
+        max-width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .skill-heading {
+        font-size: 3rem;
+    }
+
+    .skill-box img {
+        max-width: 90%;
+    }
+
+    .skill-box span {
+        font-size: 2rem;
+    }
 }
